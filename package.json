@@ -35,6 +35,6 @@
         "leaderboard:oldCrawler": "node client/leaderboard/scripts/crawlers/crawlHistoricalData/index.cjs",
         "leaderboard:newCrawler": "node client/leaderboard/scripts/crawlers/crawlNewData/index.cjs",
         "leaderboard:triggerNextCrawl": "node client/leaderboard/scripts/actuate/index.cjs",
-        "typechain1": "typechain --target ethers-v6 --out-dir ./contracts/types './contracts/out/**/*.json'"
+        "typechain": "typechain --target ethers-v6 --out-dir ./contracts/types './contracts/artifacts/!(build-info)/**/*.json'"
     }
 }
