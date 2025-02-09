@@ -1,0 +1,20 @@
+{
+    "name": "Linux",
+    "image": "ghcr.io/foundry-rs/foundry:latest",
+    "postCreateCommand": "apt update",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": 20
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "golang.go",
+                "juanblanco.solidity",
+                "GitHub.copilot-chat"
+            ]
+        }
+    }
+}
