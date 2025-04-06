@@ -37,3 +37,8 @@ contract Fallout {
         return allocations[allocator];
     }
 }
+
+/**
+AIM:
+- claim ownership
+*/
