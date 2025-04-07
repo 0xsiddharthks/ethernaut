@@ -3,6 +3,11 @@ pragma solidity ^0.8.0;
 
 contract Vault {
     bool public locked;
+
+    // Marking a variable as private only prevents other contracts from accessing it directly.
+    // However, any private state variable / local variable can still be publically decoded.
+
+    // to ensure data is private, the only way is to encrypto before putting it into the blockchain, and never put the key on chain. other option is to use zk-snark.
     bytes32 private password;
 
     constructor(bytes32 _password) {
